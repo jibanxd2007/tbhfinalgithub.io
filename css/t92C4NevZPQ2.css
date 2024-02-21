@@ -1,0 +1,131 @@
+.b-client-data {
+    padding: 5rem 0
+}
+
+@media(min-width:768px) {
+    .b-client-data {
+        padding: 8rem 0
+    }
+}
+
+.b-client-data__title {
+    margin-bottom: 3rem
+}
+
+@media(min-width:768px) {
+    .b-client-data__title {
+        margin-bottom: 6rem
+    }
+}
+
+.b-client-data__wrapper {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 4rem
+}
+
+@media(min-width:768px) {
+    .b-client-data__wrapper {
+        gap: 4rem;
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 5rem
+    }
+}
+
+.b-client-data__small-text {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.3rem;
+    text-align: center
+}
+
+.c-client-data-item {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: #403d37;;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+@media(min-width:768px) {
+    .c-client-data-item {
+        padding: 3rem 4rem 4rem
+    }
+}
+
+.c-client-data-item__title {
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 5rem;
+    margin-bottom: 1rem;
+    position: relative
+}
+
+.c-client-data-item__svg {
+    position: absolute
+}
+
+.c-client-data-item__text {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.4rem
+}
+
+.c-client-data-item:first-of-type .c-client-data-item__svg {
+    left: 0;
+    top: 1.4rem
+}
+
+.c-client-data-item:first-of-type .c-client-data-item__svg svg {
+    max-height: 7rem;
+    max-width: 10.5rem
+}
+
+.c-client-data-item:nth-of-type(2) .c-client-data-item__svg {
+    left: -1.8rem;
+    top: -2rem
+}
+
+.c-client-data-item:nth-of-type(2) .c-client-data-item__svg svg {
+    max-height: 7.5rem;
+    max-width: 13.1rem
+}
+
+@media(min-width:768px) {
+    .c-client-data-item:nth-of-type(2) .c-client-data-item__svg svg {
+        max-height: 7.6rem;
+        max-width: 13.9rem
+    }
+}
+
+.c-client-data-item:nth-of-type(3) .c-client-data-item__svg {
+    bottom: -1rem;
+    left: 0;
+    max-width: 13.5rem
+}
+
+@media(min-width:768px) {
+    .c-client-data-item:nth-of-type(3) .c-client-data-item__svg {
+        max-width: 14.2rem
+    }
+}
+
+.c-client-data-item:nth-of-type(3) .c-client-data-item__svg svg {
+    max-width: 13.5rem
+}
+
+@media(min-width:768px) {
+    .c-client-data-item:nth-of-type(3) .c-client-data-item__svg svg {
+        max-width: 14.2rem
+    }
+}
+
+.c-client-data-item:nth-of-type(4) .c-client-data-item__svg {
+    left: -2.3rem;
+    top: -.9rem
+}
+
+.c-client-data-item:nth-of-type(4) .c-client-data-item__svg svg {
+    max-height: 6.5rem;
+    max-width: 18.4rem
+}

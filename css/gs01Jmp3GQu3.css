@@ -1,0 +1,116 @@
+.b-reasons {
+    background-color: #262420;
+    padding: 5rem 0
+}
+
+@media(min-width:768px) {
+    .b-reasons {
+        padding: 8rem 0 6rem
+    }
+}
+
+.b-reasons__title {
+    margin-bottom: 4rem;
+    margin-inline: auto
+}
+
+@media(min-width:768px) {
+    .b-reasons__title {
+        font-size: 5rem;
+        margin-bottom: 8rem;
+        max-width: 90rem
+    }
+}
+
+.b-reasons__content {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(1, 1fr)
+}
+
+@media(min-width:768px) {
+    .b-reasons__content {
+        gap: 4rem;
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+.c-reason-block {
+        background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+        box-shadow: 0 8px 32px 0 rgba(31, 41, 55, 0.4);
+        backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+      }
+
+@media(min-width:768px) {
+    .c-reason-block {
+        flex-direction: row;
+        gap: 3rem;
+        padding: 5.4rem 3rem
+    }
+}
+
+.c-reason-block__content-wrapper {
+    display: flex;
+    flex-direction: column
+}
+
+@media(min-width:768px) {
+    .c-reason-block__content-wrapper {
+        gap: 1rem
+    }
+}
+
+.c-reason-block__content-wrapper {
+    display: grid;
+    gap: 1.1rem 1rem;
+    grid-template-areas: "number title" "text text"
+}
+
+@media(min-width:768px) {
+    .c-reason-block__content-wrapper {
+        gap: 1rem 3.4rem;
+        grid-template-areas: "number title" "number text"
+    }
+}
+
+.c-reason-block__number {
+    align-self: center;
+    color: #262420;
+    font-size: 9.1rem;
+    font-weight: 700;
+    grid-area: number;
+    justify-self: center;
+    line-height: 9rem
+}
+
+@media(min-width:768px) {
+    .c-reason-block__number {
+        font-size: 12rem;
+        line-height: 10rem;
+        padding-left: 1.5rem
+    }
+}
+
+.c-reason-block__title {
+    align-self: center;
+    font-size: 1.8rem;
+    grid-area: title;
+    line-height: 2.3rem;
+    max-width: 15.2rem
+}
+
+@media(min-width:768px) {
+    .c-reason-block__title {
+        font-size: 2.4rem;
+        line-height: 3.1rem;
+        max-width: 35rem
+    }
+}
+
+.c-reason-block__text {
+    font-size: 1.6rem;
+    grid-area: text;
+    line-height: 2.4rem
+}

@@ -1,0 +1,28 @@
+.b-faq {
+    padding: 5rem 0 2.5rem
+}
+
+@media(min-width:768px) {
+    .b-faq {
+        padding: 8rem 0 4rem
+    }
+}
+
+.b-faq__title {
+    margin-inline: auto;
+    margin-bottom: 4rem;
+    max-width: 32.3rem;
+    text-align: center
+}
+
+@media(min-width:768px) {
+    .b-faq__title {
+        margin-bottom: 6rem;
+        max-width: 86.5rem
+    }
+}
+
+.b-faq__accordion-container {
+    margin: 0 auto;
+    max-width: 66rem
+}

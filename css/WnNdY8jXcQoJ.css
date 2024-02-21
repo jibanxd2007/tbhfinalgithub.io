@@ -1,0 +1,142 @@
+.c-popup {
+    align-items: center;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    display: none;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99
+}
+
+.c-popup__wrapper {
+    background: #403d37;
+    border-radius: 10px;
+    max-width: 32.6rem;
+    position: relative;
+    width: 100%;
+    z-index: 10
+}
+
+@media(min-width:768px) {
+    .c-popup__wrapper {
+        max-width: 70rem
+    }
+}
+
+.c-popup__title {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    margin-inline: auto;
+    max-width: 45rem
+}
+
+@media(min-width:768px) {
+    .c-popup__title {
+        font-size: 3.2rem;
+        line-height: 4rem
+    }
+}
+
+.c-popup__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    padding: 4rem 2.4rem;
+    text-align: center
+}
+
+@media(min-width:768px) {
+    .c-popup__content {
+        gap: 1.2rem;
+        padding: 5rem 3.2rem
+    }
+}
+
+.c-popup__image {
+    max-width: 27.5rem
+}
+
+@media(min-width:768px) {
+    .c-popup__image {
+        max-width: 40rem
+    }
+}
+
+.c-popup__description {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    margin-bottom: 2rem;
+    margin-inline: auto;
+    max-width: 24rem
+}
+
+@media(min-width:768px) {
+    .c-popup__description {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        max-width: 45rem
+    }
+}
+
+.c-popup__button {
+    height: 4.4rem;
+    width: 100%
+}
+
+@media(min-width:768px) {
+    .c-popup__button {
+        min-width: 32.5rem;
+        width: auto
+    }
+}
+
+.c-popup__media {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: .8rem
+}
+
+.c-popup__close {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem
+}
+
+@media(min-width:768px) {
+    .c-popup__close {
+        cursor: pointer;
+        right: 2rem;
+        top: 2rem
+    }
+}
+
+.c-popup__close svg {
+    height: 1.2rem;
+    width: 1.2rem
+}
+
+@media(min-width:768px) {
+    .c-popup__close svg {
+        height: 2rem;
+        width: 2rem
+    }
+}
+
+.c-popup__close svg path {
+    stroke: #fff
+}
+
+.c-popup__outside {
+    background: transparent;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1
+}

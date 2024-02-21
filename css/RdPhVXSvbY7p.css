@@ -1,0 +1,146 @@
+.b-timeline {
+    background-color: #262420;
+    padding: 5rem 0
+}
+
+@media(min-width:768px) {
+    .b-timeline {
+        padding: 8rem 0
+    }
+}
+
+.b-timeline__title {
+    margin-bottom: 2.8rem;
+    margin-inline: auto;
+    max-width: 78.3rem
+}
+
+@media(min-width:768px) {
+    .b-timeline__title {
+        margin-bottom: 7rem
+    }
+}
+
+.b-timeline__wrapper {
+    position: relative
+}
+
+.b-timeline__wrapper-inner {
+    align-items: center;
+    display: flex;
+    margin: 5rem 0;
+    opacity: .1;
+    position: relative;
+    transition: .6s ease
+}
+
+.b-timeline__wrapper-inner:nth-child(odd) {
+    flex-direction: row-reverse
+}
+
+@media(min-width:768px) {
+    .b-timeline__wrapper-inner:nth-child(odd) .b-timeline__content {
+        margin-right: 3rem
+    }
+
+    .b-timeline__wrapper-inner:nth-child(2n) .b-timeline__content {
+        margin-left: 3rem
+    }
+}
+
+.b-timeline__wrapper-inner.show-content:nth-child(n),
+.b-timeline__wrapper-inner.show-content:nth-child(n) .b-timeline__bead {
+    opacity: 1
+}
+
+.b-timeline__image-wrapper {
+    max-height: 8rem;
+    max-width: 8rem
+}
+
+@media(min-width:768px) {
+    .b-timeline__image-wrapper {
+        max-height: 16.1rem;
+        max-width: 16.1rem
+    }
+}
+
+.b-timeline__content {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 48.1rem;
+    padding-left: 5rem
+}
+
+@media(min-width:768px) {
+    .b-timeline__content {
+        align-items: center;
+        flex-direction: row;
+        gap: 3rem;
+        padding-left: 0
+    }
+
+    .b-timeline__text {
+        max-width: 29rem
+    }
+}
+
+.b-timeline__content-title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3rem;
+    margin-bottom: .5rem
+}
+
+.b-timeline__line {
+    background-color: #403d37;
+    border-radius: .6rem;
+    display: none;
+    left: 0;
+    position: absolute;
+    top: -2rem;
+    width: .8rem
+}
+
+@media(min-width:768px) {
+    .b-timeline__line {
+        left: calc(50% - .4rem)
+    }
+}
+
+.b-timeline__bead {
+    display: block;
+    left: .3rem;
+    max-height: 3rem;
+    max-width: 3rem;
+    opacity: 0;
+    position: absolute;
+    top: 29%;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease;
+    z-index: 3
+}
+
+@media(min-width:768px) {
+    .b-timeline__bead {
+        left: 50%;
+        max-height: 3.4rem;
+        max-width: 3.4rem;
+        top: 50%
+    }
+}
+
+.b-timeline__bead svg {
+    max-height: 3rem;
+    max-width: 3rem
+}
+
+@media(min-width:768px) {
+    .b-timeline__bead svg {
+        left: 50%;
+        max-height: 3.4rem;
+        max-width: 3.4rem
+    }
+}
